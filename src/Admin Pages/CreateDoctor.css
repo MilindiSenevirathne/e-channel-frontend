@@ -1,6 +1,6 @@
 .boxCreateDoctor {
-    background-image: url("../../public/covid-19-coronavirus-disease-healthcare-workers-concept-close-up-confident-professional-female-doctor-nurse-glasses-scrubs-standing-white-background-cross-arms.jpg");
-    height: 550px;
+    background-image: url("../../public/background3.jpg");
+    height: 600px;
     background-size: 100%;
     background-attachment: fixed;
     overflow: hidden;
@@ -10,10 +10,10 @@
     position: absolute;
     padding: 20px 10px;
     background: inherit;
-    color: #003366;
+    color: #ffffff;
     border-color: #003366;
     width: 650px;
     margin-left: 30%;
-    margin-top: 120px;
+    margin-top: 10px;
     background-color: #003366;
   }

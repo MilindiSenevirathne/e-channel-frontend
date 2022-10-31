@@ -23,7 +23,7 @@ const AdminNavbar = () => {
           </Container>
           <Nav>
             <Nav.Link href="#">Channels</Nav.Link>
-            <Nav.Link href="#memes">
+            <Nav.Link href="/doctorlist">
               Doctors
             </Nav.Link>
           </Nav>

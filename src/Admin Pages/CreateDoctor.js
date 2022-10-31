@@ -4,14 +4,15 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import "./CreateDoctor.css";
-
+import AdminNavbar from "../Pages/AdminNavbar";
 
 const CreateDoctor = () => {
   return (
     <div>
-       <div style={{height:'80px'}}></div>
+         <AdminNavbar />
+       <div style={{height:'50px'}}></div>
       <div className="boxCreateDoctor">
-        <Form className="box_2" style={{marginTop:'200px', marginLeft:'100px'}}>
+        <Form className="box_2" style={{marginTop:'70px', marginLeft:'100px'}}>
           <Form.Group as={Row} className="mb-3">
             <Form.Label column sm={2}>
               Doctor Name

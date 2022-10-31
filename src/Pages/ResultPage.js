@@ -10,6 +10,7 @@ import {useEffect} from "react";
 import {getChannelList} from "../redux/actions/channelActions";
 import {useDispatch, useSelector} from "react-redux";
 import moment from "moment";
+import AdminNavbar from './AdminNavbar';
 
 function ResultPage() {
 
@@ -35,9 +36,13 @@ function ResultPage() {
         }
     }, [])
 
+    const onSelectAppointment=(i)=>{
+        navigate("/channel?id=" +i.id);
+    }
+
     return (
         <div>
-            <NavbarComponent/>
+            <AdminNavbar/>
             <Container style={{height: '26rem'}}>
                 <Row>
                     {channelList.map(i => (
@@ -61,7 +66,13 @@ function ResultPage() {
                                         <ListGroup.Item className='d-flex'>Channeling Fee: <span
                                             className="ms-auto">Rs.{i.fee}</span></ListGroup.Item>
                                     </ListGroup>
-                                    <Button disabled={i.activePatients >= i.maximumPatients} className={"w-100 " +(i.activePatients >= i.maximumPatients ? "btn-danger" : "")} href="#">{i.activePatients >= i.maximumPatients ? "Not Available" : "Book Now"}</Button>
+                                    <Button
+                                        disabled={i.activePatients >= i.maximumPatients}
+                                        className={"w-100 " +(i.activePatients >= i.maximumPatients ? "btn-danger" : "")}
+                                        onClick={() => onSelectAppointment(i)}
+                                    >
+                                        {i.activePatients >= i.maximumPatients ? "Not Available" : "Book Now"}
+                                    </Button>
                                 </Card.Body>
                             </Card>
                         </Col>

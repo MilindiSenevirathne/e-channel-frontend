@@ -23,3 +23,26 @@ export const getChannelList=(data)=> async(dispatch)=>{
         });
     }
 }
+
+export const getSingleChannel=(id)=> async(dispatch)=>{
+    dispatch({ type: channelActionTypes.GET_SINGLE_CHANNEL_REQUEST})
+
+    try {
+        const res = await request({
+            url: `/channel/${id}`,
+            method: 'GET',
+        })
+
+        dispatch({
+            type: channelActionTypes.GET_SINGLE_CHANNEL_SUCCEED,
+            payload: res
+        })
+
+    } catch (err) {
+        window.location.replace("/")
+        dispatch({
+            type: channelActionTypes.GET_SINGLE_CHANNEL_FAILED,
+            payload: err ? err.data : null
+        });
+    }
+}

@@ -14,6 +14,7 @@ import NavbarComponent from "./Navbar";
 
 import {getHospitalList, getSpecializationList} from "../redux/actions/extraActions";
 import {getDoctorList} from "../redux/actions/doctorActions";
+import AdminNavbar from "./AdminNavbar";
 
 const Home = () => {
 
@@ -80,7 +81,7 @@ const Home = () => {
 
     return (
         <div>
-            <NavbarComponent/>
+            <AdminNavbar/>
             <div className="box">
                 <Form className="box_2" onSubmit={onSearchClick}>
                     <Form.Group as={Row} className="mb-3">
@@ -155,9 +156,6 @@ const Home = () => {
                         </Col>
                     </Form.Group>
                 </Form>
-            </div>
-            <div className="footer">
-
             </div>
         </div>
     );

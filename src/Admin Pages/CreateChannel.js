@@ -16,7 +16,16 @@ const CreateChannel = () => {
               Doctor Name
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="text" placeholder="Doctor name"/>
+              <Form.Control type="text" placeholder="Enter Doctor name"/>
+            </Col>
+          </Form.Group>
+
+          <Form.Group as={Row} className="mb-3">
+            <Form.Label column sm={2}>
+            Specialization
+            </Form.Label>
+            <Col sm={10}>
+              <Form.Control type="text" placeholder="Enter Specialization" />
             </Col>
           </Form.Group>
 
@@ -25,25 +34,34 @@ const CreateChannel = () => {
               Hospital
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="text" placeholder="Hospital" />
+              <Form.Control type="text" placeholder="Enter Hospital" />
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} className="mb-3">
             <Form.Label column sm={2}>
-              Specialization
+              Date
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="text" placeholder="Specialization" />
+              <Form.Control type="date" placeholder="Enter Date" />
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} className="mb-3">
             <Form.Label column sm={2}>
-              Booking Date
+              Time
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="date" placeholder="Booking Date" />
+              <Form.Control type="text" placeholder="Enter Time" />
+            </Col>
+          </Form.Group>
+
+          <Form.Group as={Row} className="mb-3">
+            <Form.Label column sm={2}>
+              Maximum Number of Patients
+            </Form.Label>
+            <Col sm={10}>
+              <Form.Control type="number" placeholder="Enter Maximum Number of Patients" />
             </Col>
           </Form.Group>
 
@@ -53,8 +71,7 @@ const CreateChannel = () => {
                 type="submit"
                 style={{ backgroundColor: "#003366", borderColor: "#003366" }}
               >
-                <img src="/search.png" height="17px" className="mx-2" />
-                Search
+                Save
               </Button>
             </Col>
           </Form.Group>

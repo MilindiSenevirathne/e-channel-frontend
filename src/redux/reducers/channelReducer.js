@@ -3,6 +3,7 @@ import * as channelActionTypes from "../actionTypes/channelActionTypes"
 
 const initialState = {
     channelList: [],
+    singleChannel: null
 };
 
 export default function channelData(state = initialState, action){
@@ -13,6 +14,11 @@ export default function channelData(state = initialState, action){
             return{
                 ...state,
                 channelList: payload
+            };
+        case channelActionTypes.GET_SINGLE_CHANNEL_SUCCEED:
+            return{
+                ...state,
+                singleChannel: payload
             };
 
         default:

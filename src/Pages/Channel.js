@@ -1,7 +1,7 @@
 const Channel = () =>{
     return(
         <div>
-
+            hi
         </div>
     )
 }

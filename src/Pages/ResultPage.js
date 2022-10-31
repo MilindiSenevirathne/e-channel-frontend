@@ -10,6 +10,7 @@ import {useEffect} from "react";
 import {getChannelList} from "../redux/actions/channelActions";
 import {useDispatch, useSelector} from "react-redux";
 import moment from "moment";
+import AdminNavbar from './AdminNavbar';
 
 function ResultPage() {
 
@@ -41,7 +42,7 @@ function ResultPage() {
 
     return (
         <div>
-            <NavbarComponent/>
+            <AdminNavbar/>
             <Container style={{height: '26rem'}}>
                 <Row>
                     {channelList.map(i => (

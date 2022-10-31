@@ -1,12 +1,13 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import AdminNavbar from "./AdminNavbar";
 import NavbarComponent from "./Navbar";
 
 const Channel = () => {
   return (
     <div>
       <div>
-        <NavbarComponent />
+        <AdminNavbar />
       </div>
       <Form className="mt-4" style={{ width: "500px", margin: "auto" }}>
         <Form.Group className="mb-3">

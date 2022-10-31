@@ -39,6 +39,7 @@ const ChannelList = () => {
             <td>Cardiologist</td>
             <td>Panadura Base Hospital</td>
             <td>2022.12.11</td>
+            <td>7.00 p.m.</td>
             <td>25</td>
           </tr>
         </tbody>

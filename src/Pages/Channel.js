@@ -1,12 +1,10 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import AdminNavbar from "./AdminNavbar";
 import NavbarComponent from "./Navbar";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate, useSearchParams} from "react-router-dom";
 import {useEffect, useState} from "react";
-import {getChannelList, getSingleChannel} from "../redux/actions/channelActions";
-import moment from "moment";
+import {getSingleChannel} from "../redux/actions/channelActions";
 import {createAppointment} from "../redux/actions/appointmentActions";
 
 const Channel = () => {
@@ -54,7 +52,7 @@ const Channel = () => {
     return (
         <div>
             <div>
-                <AdminNavbar/>
+                <NavbarComponent/>
             </div>
             <Form className="mt-5" style={{width: "500px", margin: "auto"}} onSubmit={onFormSubmit}>
                 <Form.Group className="mb-3">

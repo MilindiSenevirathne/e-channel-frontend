@@ -35,6 +35,10 @@ function ResultPage() {
         }
     }, [])
 
+    const onSelectAppointment=(i)=>{
+        navigate("/channel?id=" +i.id);
+    }
+
     return (
         <div>
             <NavbarComponent/>
@@ -61,7 +65,13 @@ function ResultPage() {
                                         <ListGroup.Item className='d-flex'>Channeling Fee: <span
                                             className="ms-auto">Rs.{i.fee}</span></ListGroup.Item>
                                     </ListGroup>
-                                    <Button disabled={i.activePatients >= i.maximumPatients} className={"w-100 " +(i.activePatients >= i.maximumPatients ? "btn-danger" : "")} href="#">{i.activePatients >= i.maximumPatients ? "Not Available" : "Book Now"}</Button>
+                                    <Button
+                                        disabled={i.activePatients >= i.maximumPatients}
+                                        className={"w-100 " +(i.activePatients >= i.maximumPatients ? "btn-danger" : "")}
+                                        onClick={() => onSelectAppointment(i)}
+                                    >
+                                        {i.activePatients >= i.maximumPatients ? "Not Available" : "Book Now"}
+                                    </Button>
                                 </Card.Body>
                             </Card>
                         </Col>

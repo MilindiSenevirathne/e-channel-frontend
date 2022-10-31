@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import ResultPage from "./Pages/ResultPage";
+import CreateDoctor from "./Pages/CreateDoctor";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route exact path="*" element={<Home />} />
           <Route exact path="/resultpage" element={<ResultPage />} />
+          <Route exact path="/createdoctor" element={<CreateDoctor />} />
         </Routes>
       </BrowserRouter>
     </div>

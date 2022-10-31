@@ -3,7 +3,6 @@ import * as doctorActionTypes from "../actionTypes/doctorActionTypes"
 
 const initialState = {
     doctorList: [],
-    specializationList: []
 };
 
 export default function doctorData(state = initialState, action){

@@ -19,8 +19,9 @@ function App() {
           <Route exact path="/createdoctor" element={<CreateDoctor />} />
           <Route exact path="/doctorlist" element={<DoctorList />} />
           <Route exact path="/channel" element={<Channel />} />
-          <Route exact path="/channellist" element={<ChannelList />} />
+          <Route exact path="/channel-list" element={<ChannelList />} />
           <Route exact path="/channelcreate" element={<CreateChannel />} />
+          <Route exact path="/channelupdate/:id" element={<CreateChannel />} />
         </Routes>
       </BrowserRouter>
     </div>

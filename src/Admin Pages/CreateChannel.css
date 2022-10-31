@@ -1,0 +1,19 @@
+.box1 {
+    background-image: url("../../public/background2.jpg");
+    height: 650px;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  
+  .box1 > .box_3 {
+    position: absolute;
+    padding: 20px 10px;
+    background: inherit;
+    color: #003366;
+    border-color: #003366;
+    width: 650px;
+    margin-left: 30%;
+    margin-top: 120px;
+    background-color: #003366;
+  }

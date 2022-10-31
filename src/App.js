@@ -1,7 +1,7 @@
 import React from "react";
 import * as ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+
 import Channel from "./Pages/Channel";
 import Home from "./Pages/Home";
 import ResultPage from "./Pages/ResultPage";

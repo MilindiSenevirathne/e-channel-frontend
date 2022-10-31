@@ -5,7 +5,8 @@ import "./App.css";
 import Channel from "./Pages/Channel";
 import Home from "./Pages/Home";
 import ResultPage from "./Pages/ResultPage";
-import CreateDoctor from "./Pages/CreateDoctor";
+import CreateDoctor from "./Admin Pages/CreateDoctor";
+import DoctorList from "./Admin Pages/DoctorList";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="*" element={<Home />} />
           <Route exact path="/resultpage" element={<ResultPage />} />
           <Route exact path="/createdoctor" element={<CreateDoctor />} />
+          <Route exact path="/doctorlist" element={<DoctorList />} />
           <Route exact path="/channel" element={<Channel />} />
         </Routes>
       </BrowserRouter>

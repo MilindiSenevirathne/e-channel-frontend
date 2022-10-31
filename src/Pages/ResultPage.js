@@ -4,11 +4,12 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import NavbarComponent from "./Navbar";
 
 function ResultPage() {
   return (
-
-   
+<div>
+    <NavbarComponent />
     <Container  style={{ height: '26rem'}}>
    <Row>
    {[0, 1, 2, 3, 4].map(i => (
@@ -32,6 +33,7 @@ function ResultPage() {
             ))}
     </Row>
    </Container>
+   </div>
   );
 }
 

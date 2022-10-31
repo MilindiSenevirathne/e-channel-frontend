@@ -24,7 +24,7 @@ const AdminNavbar = () => {
           </Container>
           <Nav>
           <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/channelcreate">Channels</Nav.Link>
+            <Nav.Link href="/channellist">Channels</Nav.Link>
             <Nav.Link href="">
               Doctors
             </Nav.Link>

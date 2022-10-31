@@ -3,7 +3,6 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ChannelList from "./Admin Pages/ChannelList";
 import CreateChannel from "./Admin Pages/CreateChannel";
-import "./App.css";
 import Channel from "./Pages/Channel";
 import Home from "./Pages/Home";
 import ResultPage from "./Pages/ResultPage";

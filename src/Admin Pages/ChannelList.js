@@ -4,7 +4,7 @@ import {Link, useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 
-import AdminNavbar from "../Pages/AdminNavbar";
+import Navbar from "../Pages/Navbar";
 
 import {deleteChannel, getAllChannelList} from "../redux/actions/channelActions";
 
@@ -29,7 +29,7 @@ const ChannelList = () => {
 
     return (
         <div>
-            <AdminNavbar/>
+            <Navbar/>
             <div>
                 <Link to="/channelcreate">
                     <Button

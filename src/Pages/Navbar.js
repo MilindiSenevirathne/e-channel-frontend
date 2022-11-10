@@ -1,6 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 
+import logo from "./logo.png"
+
 const NavbarComponent = () => {
     return(
         <div className="navbar" style={{ padding: "0", marginTop: "0" }}>
@@ -17,7 +19,7 @@ const NavbarComponent = () => {
         >
           <Container>
             <Navbar.Brand>
-              <img src="logo.png" alt="logo" width="150px" />
+              <img src={logo} alt="logo" width="150px" />
             </Navbar.Brand>
           </Container>
         </Navbar>

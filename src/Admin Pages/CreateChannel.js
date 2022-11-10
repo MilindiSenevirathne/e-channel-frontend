@@ -10,7 +10,7 @@ import {useParams} from "react-router-dom";
 
 import "./CreateChannel.css";
 
-import AdminNavbar from "../Pages/AdminNavbar";
+import Navbar from "../Pages/Navbar";
 
 import {getHospitalList, getSpecializationList} from "../redux/actions/extraActions";
 import {getDoctorList} from "../redux/actions/doctorActions";
@@ -81,7 +81,7 @@ const CreateChannel = () => {
 
     return (
         <div>
-            <AdminNavbar/>
+            <Navbar/>
             <div className="box1">
                 <Form className="box_3" onSubmit={onSaveClick}>
                     <Form.Group as={Row} className="mb-3">
